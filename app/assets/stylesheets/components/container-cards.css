@@ -1,0 +1,8 @@
+.container-cards {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
