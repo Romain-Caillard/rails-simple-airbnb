@@ -4,17 +4,22 @@
   <% @flats.each do |flat| %>
 
     <div class="card flat-card">
+  <img src="https://images.unsplash.com/photo-1452626212852-811d58933cae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2448&q=80" alt="Nice house in montains">
 
+  <div class="flat-infos">
       <h3><%= flat.name %></h3>
       <p><%= flat.address %></p>
 
-      <div class="flat-card-numbers">
+      <div class="flat-size-infos">
         <span class="size-infos"><%= flat.number_of_guests %></span>
         <span class="size-infos"><%= flat.price_per_night %></span>
       </div>
+  </div>
 
-      <div class="flat-card-footer">
+      <div class="flat-footer">
         <%= link_to "More info", flat_path(flat) %>
+        <%= link_to "Edit", flat_path(flat) %>
+        <%= link_to "Remove", flat_path(flat) %>
       </div>
 
     </div>
