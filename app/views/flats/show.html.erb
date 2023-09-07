@@ -1,0 +1,45 @@
+<div class="show-container">
+  <div class="show-infos-container">
+
+    <div class="show-infos-container-left">
+      <div class="flat-name-address">
+        <h1><%= @flat.name %></h1>
+        <p><%= @flat.address %></p>
+      </div>
+
+      <div class="flat-description-map">
+        <h2>A bit more about this flat...</h2>
+        <p><%= @flat.description %></p>
+
+      </div>
+
+    </div>
+
+    <div class="show-infos-container-right">
+
+      <div class="flat-booking-div">
+        <h2>Book this place!</h2>
+        <h5>From:</h5>
+        <h5>To:</h5>
+        <a href="#" class="btn btn-medium">Book!</a>
+      </div>
+
+      <div class="flat-booking-div">
+        <h2>Details</h2>
+        <p><%= @flat.number_of_guests %> people</p>
+        <p><%= @flat.price_per_night %> € per night</p>
+      </div>
+
+      <div class="share-links">
+        <p>Share</p>
+        <ul>
+          <li><i class="fa-brands fa-facebook"></i></li>
+          <li><i class="fa-brands fa-twitter"></i></li>
+          <li><i class="fa-brands fa-instagram"></i></li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</div>

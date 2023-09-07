@@ -1,0 +1,15 @@
+<div class="new-container">
+  <h1>Create your Flat page here</h1>
+
+  <%= form_with model: @restaurant do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :address %>
+    <%= f.text_field :address %>
+    <%= f.label :rating %>
+    <%= f.number_field :rating %>
+    <%= f.submit %>
+  <% end %>
+
+
+</div>

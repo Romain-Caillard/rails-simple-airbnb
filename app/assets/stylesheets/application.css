@@ -2,11 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
 @import url("https://use.fontawesome.com/releases/v6.1.2/css/all.css");
 
-@import url("components/container-cards.css");
-@import url("components/card.css");
-@import url("components/flat-card.css");
+/* Root component */
+@import url("components/button.css");
+@import url("components/navbar.css");
 
+/* index */
+@import url("components/index/container-cards.css");
+@import url("components/index/card.css");
+@import url("components/index/flat-card.css");
 
+/* show */
+@import url("components/show/show-container.css");
+@import url("components/show/show-infos-container.css");
+@import url("components/show/show-infos-container-left.css");
+@import url("components/show/show-infos-container-right.css");
+
+/* New */
+@import url("components/new/new-container.css");
 
 * {
   margin: 0;
@@ -20,4 +32,24 @@ body {
   font-family: 'Roboto', "Open Sans", "Helvetica", "sans-serif";
   background-image: url(../../images/background.png);
   background-size: cover;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a {
+  opacity: 0.8;
+  text-decoration: none;
+  color: blueviolet;
+  font-weight: lighter;
+}
+
+a:hover {
+  opacity: 1;
+  color: rgb(88, 32, 141);
 }

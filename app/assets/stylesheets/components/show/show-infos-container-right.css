@@ -1,0 +1,30 @@
+.show-infos-container-right {
+  /* background-color: rgb(187, 252, 253); */
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.show-infos-container-right > * {
+  margin-bottom: 2vh;
+  padding: 2vh;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: rgb(244, 244, 244);
+}
+
+.flat-booking-div > :not(:last-child) {
+  margin-bottom: 1vh;
+}
+
+.flat-booking-div h5 {
+  border: 1px solid gray;
+  border-radius: 3px;
+  padding: 10px;
+
+}
+
+.share-links {
+  display: flex;
+  justify-content: space-between;
+}

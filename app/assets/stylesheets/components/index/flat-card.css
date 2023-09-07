@@ -1,6 +1,8 @@
 .flat-card {
   width: 400px;
   border-radius: 4px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  /* border: 1px solid black; */
   display: flex;
   flex-direction: column;
   color: black;
@@ -22,7 +24,18 @@
   margin: 0 10px 0 0;
 }
 
+.size-infos i {
+  margin-right: 5px;
+}
+
 .flat-footer {
   margin-top: 20px;
   padding: 20px;
+
+}
+
+.flat-footer a {
+  color: black;
+  text-decoration: none;
+  margin-right: 15px;
 }

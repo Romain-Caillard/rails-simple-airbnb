@@ -12,6 +12,10 @@
   </head>
 
   <body>
+    <div class="navbar">
+      <%= link_to "Home", flats_path, class:'btn btn-medium' %>
+      <%= link_to "Enregistrer une annonce", new_flat_path, class:'btn btn-medium' %>
+    </div>
     <%= yield %>
   </body>
 </html>

@@ -1,0 +1,22 @@
+.show-infos-container-left {
+  width: 60%;
+  margin-right: 2vh;
+  /* background-color: bisque; */
+  display: flex;
+  flex-direction: column;
+ }
+
+ .show-infos-container-left > * {
+  margin-bottom: 2vh;
+  padding: 2vh;
+  border: 1px solid gray;
+  border-radius: 5px;
+  background-color: rgb(244, 244, 244);
+}
+
+.flat-name-address > :not(:last-child) {
+  margin-bottom: 1vh;
+}
+.flat-description-map > :not(:last-child) {
+  margin-bottom: 1vh;
+}

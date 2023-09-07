@@ -1,5 +1,3 @@
-
-
 <div class="container-cards">
   <% @flats.each do |flat| %>
 
@@ -11,15 +9,15 @@
       <p><%= flat.address %></p>
 
       <div class="flat-size-infos">
-        <span class="size-infos"><%= flat.number_of_guests %></span>
-        <span class="size-infos"><%= flat.price_per_night %></span>
+        <span class="size-infos" ><i class="fa-solid fa-people-group"></i><%= flat.number_of_guests %></span>
+        <span class="size-infos"><i class="fa-solid fa-euro-sign"></i><%= flat.price_per_night %></span>
       </div>
   </div>
 
       <div class="flat-footer">
-        <%= link_to "More info", flat_path(flat) %>
-        <%= link_to "Edit", flat_path(flat) %>
-        <%= link_to "Remove", flat_path(flat) %>
+       <%= link_to "More info", flat_path(flat) %>
+       <%= link_to "Edit", edit_flat_path(flat) %>
+       <%= link_to "Remove", flat_path(flat), data: {turbo_method: :delete, turbo_confirm: "Supprimer ce fat appart???"}  %>
       </div>
 
     </div>
