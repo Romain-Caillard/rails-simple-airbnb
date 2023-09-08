@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@100;300;400;700&display=swap');
+
 @import url("https://use.fontawesome.com/releases/v6.1.2/css/all.css");
 
 /* Root component */
@@ -22,7 +24,7 @@
 
 * {
   margin: 0;
-  font-family: 'Roboto', "Open Sans", "Helvetica", "sans-serif";
+  font-family: 'Dancing Script', cursive;
 }
 
 body {
@@ -30,8 +32,7 @@ body {
   font-size: 16px;
   margin: 0;
   margin-bottom: 100px;
-  font-family: 'Roboto', "Open Sans", "Helvetica", "sans-serif";
-  background-image: url(../../images/background.png);
+  background-image: url("https://images.unsplash.com/photo-1452626212852-811d58933cae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2448&q=80");
   background-size: cover;
 }
 

@@ -3,7 +3,7 @@
   display: block;
   border-radius: 4px;
   border: none;
-  background: rgb(88, 216, 82);
+  background: rgb(218, 168, 103);
 
   padding: 12px 16px;
 
@@ -21,6 +21,6 @@
 }
 
 .btn:hover {
-  background: rgb(234, 255, 207);
+  background: rgb(241, 180, 48);
   color: black;
 }
