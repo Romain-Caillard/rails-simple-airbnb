@@ -13,7 +13,9 @@ class FlatsController < ApplicationController
   end
 
   def create
-    @flat = Flat.new(params[:flat])
+    @flat = Flat.new(flat_params)
+    @flat.save
+    redirect_to flat_path(@flat)
   end
 
   def destroy
@@ -27,5 +29,8 @@ class FlatsController < ApplicationController
     @flat = Flat.find(params[:id])
   end
 
-  def
+  def flat_params
+    params.require(:flat).permit(:name, :address, :description, :number_of_guests, :price_per_night)
+  end
+
 end

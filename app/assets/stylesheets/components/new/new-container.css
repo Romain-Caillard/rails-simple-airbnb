@@ -31,4 +31,6 @@ form > :last-child {
 
 form input[type=number] {
   width: 5em;
+  border: 2px solid pink;
+  border-radius: 5px;
 }
