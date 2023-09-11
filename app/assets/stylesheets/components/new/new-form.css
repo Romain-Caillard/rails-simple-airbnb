@@ -1,0 +1,49 @@
+
+.form-div {
+  width: 50%;
+  margin: 4em;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 10px;
+  background: rgba(241, 241, 241, 0.8);
+  padding: 0.5em;
+}
+
+.form-div h1 {
+  text-align: center;
+}
+
+.form-div form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-div form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-div form label {
+  margin-bottom: 0.5em;
+}
+
+
+.form-div form > * {
+  margin: 0.5em;
+}
+
+.form-div form > :last-child {
+  margin-top: 1em;
+  padding: 0.8em;
+}
+
+.form-div form .form-control {
+  border: 1px solid rgba(54, 52, 52, 0.2);
+  border-radius: 5px;
+  padding: 0.7em;
+  font-size: 1em;
+}
+
+.form-div form input[type=number] {
+  width: 5em;
+}

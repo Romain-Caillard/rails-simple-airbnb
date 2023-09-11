@@ -16,6 +16,17 @@
     <div class="navbar">
       <%= link_to "Home", flats_path, class:'btn btn-medium' %>
       <%= link_to "Enregistrer une annonce", new_flat_path, class:'btn btn-medium' %>
+
+      <div class="search-form-div">
+        <h2> Rechercher:</h2>
+        <%# un form avec un input "text" (qui sera un champ) et un input "submit" (qui sera un bouton) %>
+        <form action="/flats" method="get">
+          <input type="text" name="query" placeholder="Un critère de recherche?">
+          <input type="submit">
+        </form>
+      </div>
+
+      </div>
     </div>
     <%= yield %>
   </body>

@@ -74,3 +74,6 @@ end
 # Gems que j'ai installé
 # Livereload pour reloader le browser des que je fais des changements dans le code
 gem "hotwire-livereload", "~> 1.2", :group => :development
+
+#Geocoding
+gem "geocoder"

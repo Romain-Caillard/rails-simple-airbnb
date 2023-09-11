@@ -1,0 +1,19 @@
+.search-form-div {
+  display: flex;
+}
+
+.search-form-div > * {
+  margin-right: 0.5em;
+}
+
+.search-form-div form {
+  display: flex;
+  flex-direction: row;
+}
+
+.search-form-div form input[type=text] {
+  text-align: center;
+  width: 12em;
+  margin-right: 1em;
+  padding: 0.5em;
+}

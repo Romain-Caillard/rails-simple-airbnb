@@ -1,4 +1,7 @@
-<div class="new-container">
-  <h1>Edit your Flat page here</h1>
+<div class="edit-container" style="background-image: url(<%= @flat.picture %>)">
+
+<div class="form-div">
+  <h1>Edit this place</h1>
   <%= render "form", flat: @flat %>
+</div>
 </div>

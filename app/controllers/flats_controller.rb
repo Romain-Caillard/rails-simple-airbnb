@@ -2,10 +2,17 @@ class FlatsController < ApplicationController
   before_action :set_flat, only: [:show, :edit, :update, :destroy]
 
   def index
-    @flats = Flat.all
+    if params[:query].present?
+      # @flats = Flat.where("name LIKE '%#{params[:query]}%'")
+      sql_query = "name LIKE :query OR description LIKE :query"
+      @flats = Flat.where(sql_query, query: "%#{params[:query]}%")
+    else
+      @flats = Flat.all
+    end
   end
 
   def show
+
   end
 
   def new
@@ -39,7 +46,7 @@ class FlatsController < ApplicationController
   end
 
   def flat_params
-    params.require(:flat).permit(:name, :address, :description, :number_of_guests, :price_per_night)
+    params.require(:flat).permit(:name, :address, :description, :number_of_guests, :price_per_night, :picture)
   end
 
 end

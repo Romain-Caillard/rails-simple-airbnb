@@ -9,9 +9,16 @@
 
 }
 
+.flat-card-picture {
+  height: 20em;
+  background-size: cover;
+  background-position: center;
+}
+
 .flat-infos {
   background-color: rgb(238, 232, 232);
-  padding: 20px;
+  padding: 1.2em;
+  height: 4em;
 }
 
 .flat-size-infos {
@@ -29,8 +36,8 @@
 }
 
 .flat-footer {
-  margin-top: 20px;
-  padding: 20px;
+  height: 1em;
+  padding: 1.2em;
 
 }
 

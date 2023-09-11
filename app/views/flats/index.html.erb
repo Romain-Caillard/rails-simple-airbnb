@@ -2,24 +2,24 @@
   <% @flats.each do |flat| %>
 
     <div class="card flat-card">
-  <img src="https://images.unsplash.com/photo-1452626212852-811d58933cae?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2448&q=80" alt="Nice house in montains">
-
-  <div class="flat-infos">
-      <h3><%= flat.name %></h3>
-      <p><%= flat.address %></p>
-
-      <div class="flat-size-infos">
-        <span class="size-infos" ><i class="fa-solid fa-people-group"></i><%= flat.number_of_guests %></span>
-        <span class="size-infos"><i class="fa-solid fa-euro-sign"></i><%= flat.price_per_night %></span>
+      <div class="flat-card-picture" style="background-image: url(<%= flat.picture %>)">
       </div>
-  </div>
+
+      <div class="flat-infos">
+        <h3><%= flat.name %></h3>
+        <p><%= flat.address %></p>
+
+        <div class="flat-size-infos">
+          <span class="size-infos" ><i class="fa-solid fa-people-group"></i><%= flat.number_of_guests %></span>
+          <span class="size-infos"><i class="fa-solid fa-euro-sign"></i><%= flat.price_per_night %></span>
+        </div>
+      </div>
 
       <div class="flat-footer">
-       <%= link_to "Tu l'as vu mon cul?", flat_path(flat) %>
-       <%= link_to "Edit", edit_flat_path(flat) %>
-       <%= link_to "Remove", flat_path(flat), data: {turbo_method: :delete, turbo_confirm: "Supprimer ce fat appart???"}  %>
+        <%= link_to "See details", flat_path(flat) %>
+        <%= link_to "Edit", edit_flat_path(flat) %>
+        <%= link_to "Remove", flat_path(flat), data: {turbo_method: :delete, turbo_confirm: "Supprimer ce fat appart???"}  %>
       </div>
-
     </div>
 
   <% end %>
